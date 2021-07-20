@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.1686746987951807" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="334.0" prefWidth="302.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.ArtikelBearbeitenAdminViewController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="46.0" prefWidth="778.0">
+            <children>
+                <Button layoutX="232.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="Logout" AnchorPane.rightAnchor="10.0">
+                    <effect>
+                        <InnerShadow height="15.0" radius="7.0" width="15.0">
+                            <color>
+                                <Color green="0.5333333611488342" blue="1.0" />
+                            </color>
+                        </InnerShadow>
+                    </effect></Button>
+                <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMainView" text="Zurück" AnchorPane.leftAnchor="10.0">
+                    <effect>
+                        <InnerShadow height="15.0" radius="7.0" width="15.0">
+                            <color>
+                                <Color green="0.5333333611488342" blue="1.0" />
+                            </color>
+                        </InnerShadow>
+                    </effect>
+                </Button>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="330.0" prefWidth="441.0">
+            <children>
+                <Label layoutX="10.0" layoutY="14.0" text="Artikel bearbeiten" textFill="#0088ff" AnchorPane.leftAnchor="10.0">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="16.0" layoutY="53.0" text="ArtikelBez.:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="60.0" />
+                <TextField fx:id="artikelbezeichnunginput" layoutX="90.0" layoutY="56.0" prefHeight="20.0" prefWidth="200.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="56.0" />
+                <Label layoutX="16.0" layoutY="81.0" text="ArtikelKat.:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="90.0" />
+                <TextField fx:id="artikelkategorieinput" layoutX="90.0" layoutY="86.0" prefHeight="20.0" prefWidth="200.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="86.0" />
+                <Label layoutX="14.0" layoutY="185.0" text="FSK:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="120.0" />
+                <ComboBox fx:id="artikelfskinput" layoutX="90.0" layoutY="116.0" prefHeight="20.0" prefWidth="200.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="116.0" />
+                <Label layoutX="22.0" layoutY="223.0" text="Bestand:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="150.0" />
+                <TextField fx:id="artikelbestandinput" layoutX="90.0" layoutY="146.0" prefHeight="20.0" prefWidth="200.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="146.0" />
+                <Label layoutX="29.0" layoutY="265.0" text="Nettopreis:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="180.0" />
+                <TextField fx:id="artikelnettopreisinput" layoutX="90.0" layoutY="176.0" prefHeight="20.0" prefWidth="200.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="176.0" />
+                <Label layoutX="22.0" layoutY="306.0" text="Mwst.:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="210.0" />
+                <ComboBox fx:id="artikelmwstinput" layoutX="90.0" layoutY="206.0" prefHeight="20.0" prefWidth="200.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="206.0" />
+                <Button layoutX="231.0" layoutY="250.0" mnemonicParsing="false" onAction="#artikelAktualisieren" text="Aktualisieren" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="240.0">
+                    <effect>
+                        <InnerShadow height="15.0" radius="7.0" width="15.0">
+                            <color>
+                                <Color green="0.5333333611488342" blue="1.0" />
+                            </color>
+                        </InnerShadow>
+                    </effect>
+                </Button>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

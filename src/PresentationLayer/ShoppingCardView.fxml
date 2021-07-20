@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.1193058568329718" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="463.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.ShoppingCardViewController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="46.0" prefWidth="778.0">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMainView" text="Zurück zur Hauptansicht">
+               <effect>
+                  <InnerShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color green="0.5333333611488342" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Button layoutX="710.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="Logout" AnchorPane.rightAnchor="14.0">
+               <effect>
+                  <InnerShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color green="0.5333333611488342" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></Button>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="778.0">
+         <children>
+            <Label layoutX="14.0" layoutY="17.0" text="Warenkorb" textFill="#0088ff" AnchorPane.leftAnchor="14.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="warenkorb" layoutX="14.0" layoutY="62.0" prefHeight="258.0" prefWidth="770.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+               <columns>
+                  <TableColumn fx:id="clartikelnummer1" prefWidth="61.0" text="ArtNr." />
+                  <TableColumn fx:id="clartikelbezeichnung1" prefWidth="529.0" text="ArtBez." />
+                  <TableColumn fx:id="clartikelmenge1" prefWidth="70.0" text="Menge" />
+                  <TableColumn fx:id="clartikelpreis1" prefWidth="109.0" text="Preis" />
+               </columns>
+            </TableView>
+            <Label layoutX="631.0" layoutY="330.0" prefHeight="17.0" text="ges.Preis:" textFill="#0088ff" AnchorPane.bottomAnchor="56.0" AnchorPane.rightAnchor="100.0" />
+            <Label fx:id="gesamtSumme" alignment="CENTER_RIGHT" layoutX="739.0" layoutY="330.0" prefHeight="17.0" prefWidth="84.0" AnchorPane.rightAnchor="14.0" />
+            <Button layoutX="698.0" layoutY="364.0" mnemonicParsing="false" onAction="#kasse" text="zur Kasse" AnchorPane.rightAnchor="14.0">
+               <effect>
+                  <InnerShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color green="0.5333333611488342" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Button layoutX="14.0" layoutY="364.0" mnemonicParsing="false" onAction="#clearWarenkorb" text="Warenkorb leeren" >
+               <effect>
+                  <InnerShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color green="0.5333333611488342" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

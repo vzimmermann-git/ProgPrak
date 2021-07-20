@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.1193058568329718" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="463.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.CustomerViewController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="46.0" prefWidth="778.0">
+         <children>
+            <Button fx:id="warenkorbbutton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToWarenkorb" text="Warenkorb" AnchorPane.leftAnchor="14.0">
+               <effect>
+                  <InnerShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color green="0.5333333611488342" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Button fx:id="logoutbutton" layoutX="710.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="Logout" AnchorPane.rightAnchor="14.0">
+               <effect>
+                  <InnerShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color green="0.5333333611488342" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></Button>
+            <Button layoutX="664.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToDatenAnpassen" text="Profil">
+               <effect>
+                  <InnerShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color green="0.5333333611488342" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="778.0">
+         <children>
+            <Label layoutX="14.0" layoutY="17.0" text="Onlineshop" textFill="#0088ff" AnchorPane.leftAnchor="14.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchinput" layoutX="354.0" layoutY="27.0" prefHeight="25.0" prefWidth="173.0" promptText="Suche..." AnchorPane.bottomAnchor="343.0" AnchorPane.rightAnchor="271.0" AnchorPane.topAnchor="35.0" />
+            <TableView fx:id="tableview" layoutX="14.0" layoutY="66.0" onMouseClicked="#artikelDetailsAnsicht" prefHeight="300.0" prefWidth="513.0" AnchorPane.leftAnchor="14.0">
+               <columns>
+                  <TableColumn fx:id="clartikelnummer" prefWidth="53.0" text="ArtNr." />
+                  <TableColumn fx:id="clartikelbezeichnung" prefWidth="176.0" text="ArtBez." />
+                  <TableColumn fx:id="clartikelkategorie" prefWidth="66.0" text="ArtKat." />
+                  <TableColumn fx:id="clartikelaltersfreigabe" prefWidth="49.0" text="FSK" />
+                  <TableColumn fx:id="clartikelbestand" prefWidth="52.0" text="Bestand" />
+                  <TableColumn fx:id="clartikelpreis" minWidth="0.0" prefWidth="70.0" text="Nettopreis" />
+                  <TableColumn fx:id="clartikelmehrwertsteuer" prefWidth="46.0" text="Mwst." />
+               </columns></TableView>
+            <AnchorPane fx:id="detailsansicht" layoutX="531.0" layoutY="66.0" prefHeight="300.0" prefWidth="233.0" AnchorPane.leftAnchor="551.0" AnchorPane.rightAnchor="14.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Detailansicht" textFill="#0088ff" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="48.0" prefHeight="20.0" text="ArtikelNr.:" textFill="#0088ff" AnchorPane.bottomAnchor="235.0" AnchorPane.leftAnchor="15.0" />
+                  <Label layoutX="14.0" layoutY="81.0" prefHeight="20.0" text="ArtikelBez.:" textFill="#0088ff" AnchorPane.bottomAnchor="205.0" AnchorPane.leftAnchor="15.0" />
+                  <Label layoutX="14.0" layoutY="113.0" prefHeight="20.0" text="ArtikelKat.:" textFill="#0088ff" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="15.0" />
+                  <Label layoutX="14.0" layoutY="142.0" prefHeight="20.0" text="FSK:" textFill="#0088ff" AnchorPane.bottomAnchor="145.0" AnchorPane.leftAnchor="15.0" />
+                  <Label layoutX="14.0" layoutY="172.0" prefHeight="20.0" text="Bestand:" textFill="#0088ff" AnchorPane.bottomAnchor="115.0" AnchorPane.leftAnchor="15.0" />
+                  <Label layoutX="14.0" layoutY="205.0" prefHeight="20.0" text="Nettopreis:" textFill="#0088ff" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="15.0" />
+                  <Label layoutX="14.0" layoutY="238.0" prefHeight="20.0" text="Mwst.:" textFill="#0088ff" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="15.0" />
+                  <Label layoutX="14.0" layoutY="269.0" prefHeight="20.0" text="Bruttopreis:" textFill="#0088ff" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="15.0" />
+                  <Label fx:id="artnr" layoutX="191.0" layoutY="48.0" prefHeight="20.0" prefWidth="70.0" AnchorPane.bottomAnchor="235.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="48.0" />
+                  <Label fx:id="artbezeichnung" layoutX="191.0" layoutY="81.0" prefHeight="20.0" prefWidth="70.0" AnchorPane.bottomAnchor="205.0" AnchorPane.rightAnchor="15.0" />
+                  <Label fx:id="artkategorie" layoutX="191.0" layoutY="113.0" prefHeight="20.0" prefWidth="70.0" AnchorPane.bottomAnchor="175.0" AnchorPane.rightAnchor="15.0" />
+                  <Label fx:id="artfsk" layoutX="191.0" layoutY="142.0" prefHeight="20.0" prefWidth="70.0" AnchorPane.bottomAnchor="145.0" AnchorPane.rightAnchor="15.0" />
+                  <Label fx:id="artbestand" layoutX="191.0" layoutY="172.0" prefHeight="20.0" prefWidth="70.0" AnchorPane.bottomAnchor="115.0" AnchorPane.rightAnchor="15.0" />
+                  <Label fx:id="artnettopreis" layoutX="191.0" layoutY="205.0" prefHeight="20.0" prefWidth="70.0" AnchorPane.bottomAnchor="85.0" AnchorPane.rightAnchor="15.0" />
+                  <Label fx:id="artmehrwertsteuer" layoutX="148.0" layoutY="238.0" prefHeight="20.0" prefWidth="70.0" AnchorPane.bottomAnchor="55.0" AnchorPane.rightAnchor="15.0" />
+                  <Label fx:id="artbruttopreis" layoutX="191.0" layoutY="269.0" prefHeight="20.0" prefWidth="70.0" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="15.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="addWarenkorbButton" layoutX="597.0" layoutY="364.0" mnemonicParsing="false" onAction="#addToWarenkorb" prefHeight="25.0" prefWidth="167.0" text="Zum Warenkorb hinzufügen" AnchorPane.rightAnchor="14.0">
+               <effect>
+                  <InnerShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color green="0.5333333611488342" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Spinner fx:id="spinner" editable="true" layoutX="544.0" layoutY="364.0" prefHeight="25.0" prefWidth="70.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

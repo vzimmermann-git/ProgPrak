@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="463.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.MitarbeiteranlegenViewController">
+   <children>
+      <Label layoutX="27.0" layoutY="14.0" text="Mitarbeiter Daten" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="64.0" text="Benutzername:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="27.0" layoutY="91.0" text="Passwort:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="28.0" layoutY="118.0" text="Email-Adresse:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="27.0" layoutY="145.0" text="Vorname:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="28.0" layoutY="173.0" text="Nachname:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="28.0" layoutY="200.0" text="Geburtsdatum:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="27.0" layoutY="240.0" text="Straße:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="28.0" layoutY="267.0" text="Hausnummer:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="28.0" layoutY="294.0" text="PLZ:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="27.0" layoutY="322.0" text="Ort:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="30.0" layoutY="350.0" text="bevorzugte Bezahlmethode:" AnchorPane.leftAnchor="30.0" />
+      <TextField fx:id="benutzernameInput" layoutX="214.0" layoutY="60.0" prefHeight="25.0" prefWidth="311.0" AnchorPane.leftAnchor="220.0" />
+      <PasswordField fx:id="passwordInput" layoutX="214.0" layoutY="87.0" prefHeight="25.0" prefWidth="311.0" AnchorPane.leftAnchor="220.0" />
+      <TextField fx:id="emailInput" layoutX="214.0" layoutY="114.0" prefHeight="25.0" prefWidth="311.0" AnchorPane.leftAnchor="220.0" />
+      <TextField fx:id="vornameInput" layoutX="214.0" layoutY="141.0" prefHeight="25.0" prefWidth="311.0" AnchorPane.leftAnchor="220.0" />
+      <TextField fx:id="nachnameInput" layoutX="214.0" layoutY="169.0" prefHeight="25.0" prefWidth="311.0" AnchorPane.leftAnchor="220.0" />
+      <TextField fx:id="geburtsdatumInput" layoutX="214.0" layoutY="196.0" prefHeight="25.0" prefWidth="311.0" AnchorPane.leftAnchor="220.0" />
+      <TextField fx:id="strasseInput" layoutX="214.0" layoutY="236.0" prefHeight="25.0" prefWidth="311.0" AnchorPane.leftAnchor="220.0" />
+      <TextField fx:id="hausnummerInput" layoutX="214.0" layoutY="263.0" prefHeight="25.0" prefWidth="311.0" AnchorPane.leftAnchor="220.0" />
+      <TextField fx:id="postleitzahlInput" layoutX="214.0" layoutY="290.0" prefHeight="25.0" prefWidth="311.0" AnchorPane.leftAnchor="220.0" />
+      <TextField fx:id="ortInput" layoutX="214.0" layoutY="318.0" prefHeight="25.0" prefWidth="311.0" AnchorPane.leftAnchor="220.0" />
+      <ComboBox fx:id="bezahlmethodeInput" layoutX="220.0" layoutY="346.0" prefHeight="25.0" prefWidth="311.0" />
+      <Button layoutX="706.0" layoutY="410.0" mnemonicParsing="false" onAction="#mitarbeiterAnlegen" text="Anlegen" AnchorPane.rightAnchor="14.0" />
+      <Button layoutX="531.0" layoutY="410.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="25.0" prefWidth="154.0" text="Zurück zum Hauptmenü" />
+   </children>
+</AnchorPane>

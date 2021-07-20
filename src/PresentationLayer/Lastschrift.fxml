@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="115.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.LastschriftController">
+   <children>
+      <Label layoutX="22.0" layoutY="14.0" text="Kontoinhaber:" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="48.0" text="IBAN:" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="45.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="83.0" text="BIC:" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="127.0" layoutY="15.0" AnchorPane.leftAnchor="110.0" />
+      <TextField layoutX="127.0" layoutY="45.0" AnchorPane.leftAnchor="110.0" />
+      <TextField layoutX="127.0" layoutY="75.0" AnchorPane.leftAnchor="110.0" />
+   </children>
+</AnchorPane>

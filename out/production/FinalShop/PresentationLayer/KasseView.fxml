@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="463.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.KasseViewController">
+   <children>
+      <Label layoutX="25.0" layoutY="29.0" text="Lieferadresse" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="64.0" text="Vorname:" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="258.0" layoutY="64.0" text="Nachname:" AnchorPane.leftAnchor="260.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="96.0" text="Straße:" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="278.0" layoutY="96.0" text="Hausnummer:" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="441.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="19.0" layoutY="127.0" text="Postleitzahl:" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="701.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="278.0" layoutY="127.0" text="Ort:" AnchorPane.leftAnchor="260.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="171.0" text="Zahlungsart" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="zahlung" layoutX="15.0" layoutY="248.0" prefHeight="165.0" prefWidth="770.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="250.0" />
+      <TextField fx:id="vornameinput" layoutX="103.0" layoutY="64.0" AnchorPane.leftAnchor="105.0" />
+      <TextField fx:id="nachnameinput" layoutX="351.0" layoutY="64.0" AnchorPane.leftAnchor="365.0" />
+      <TextField fx:id="strasseinput" layoutX="103.0" layoutY="96.0" AnchorPane.leftAnchor="105.0" />
+      <TextField fx:id="hausnummerinput" layoutX="387.0" layoutY="96.0" AnchorPane.leftAnchor="365.0" />
+      <TextField fx:id="plzinput" layoutX="103.0" layoutY="127.0" AnchorPane.leftAnchor="105.0" />
+      <TextField fx:id="ortinput" layoutX="338.0" layoutY="127.0" AnchorPane.leftAnchor="365.0" />
+      <Button layoutX="733.0" layoutY="424.0" mnemonicParsing="false" onAction="#cashOut" text="Cash out" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="selectZahlung" layoutX="15.0" layoutY="213.0" prefWidth="150.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="215.0" />
+   </children>
+</AnchorPane>

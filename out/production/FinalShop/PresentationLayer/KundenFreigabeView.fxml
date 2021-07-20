@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.1193058568329718" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="463.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.KundenFreigabeViewController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="46.0" prefWidth="778.0">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMainView" text="Zurück zur Hauptansicht">
+               <effect>
+                  <InnerShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color green="0.5333333611488342" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Button layoutX="710.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="Logout" AnchorPane.rightAnchor="14.0">
+               <effect>
+                  <InnerShadow height="15.0" radius="7.0" width="15.0">
+                     <color>
+                        <Color green="0.5333333611488342" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></Button>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="778.0">
+         <children>
+            <Label layoutX="14.0" layoutY="17.0" text="Freizugebende Kunden" textFill="#0088ff" AnchorPane.leftAnchor="14.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="freizugebendeKundenListe" layoutX="14.0" layoutY="62.0" prefHeight="258.0" prefWidth="770.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+               <columns>
+                  <TableColumn fx:id="clkundennummer" prefWidth="46.0" text="KndNr." />
+                  <TableColumn fx:id="clbenutzername" prefWidth="97.0" text="Benutzername" />
+                  <TableColumn fx:id="clemail" prefWidth="66.0" text="Email" />
+                  <TableColumn fx:id="clvorname" prefWidth="69.0" text="Vorname" />
+                  <TableColumn fx:id="clnachname" prefWidth="81.0" text="Nachname" />
+                  <TableColumn fx:id="clgeburtsdatum" prefWidth="87.0" text="Geb.-Datum" />
+                  <TableColumn fx:id="clstrasse" prefWidth="55.0" text="Straße" />
+                  <TableColumn fx:id="clhausnummer" prefWidth="38.0" text="Hnr." />
+                  <TableColumn fx:id="clplz" prefWidth="58.0" text="PLZ" />
+                  <TableColumn fx:id="clort" prefWidth="63.0" text="Ort" />
+                  <TableColumn fx:id="clzahlung" prefWidth="73.0" text="Zahlung" />
+                  <TableColumn fx:id="claccesslevel" prefWidth="36.0" text="LvL" />
+               </columns>
+            </TableView>
+            <TextField fx:id="searchinput" layoutX="617.0" layoutY="27.0" prefHeight="25.0" prefWidth="167.0" promptText="Suche..." />
+            <Button layoutX="697.0" layoutY="337.0" mnemonicParsing="false" onAction="#freigeben" prefHeight="25.0" prefWidth="87.0" text="Freigeben" AnchorPane.bottomAnchor="41.0" AnchorPane.topAnchor="337.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

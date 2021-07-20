@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="165.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.RechnungController">
+   <children>
+      <Label layoutX="8.0" layoutY="14.0" text="Rechnungsadresse" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="66.0" text="Vorname:" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="70.0" />
+      <Label layoutX="226.0" layoutY="70.0" text="Nachname:" />
+      <Label layoutX="14.0" layoutY="100.0" text="Straße:" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0" />
+      <Label layoutX="226.0" layoutY="100.0" text="Hausnummer:" />
+      <Label layoutX="14.0" layoutY="134.0" text="Postleitzahl:" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="130.0" />
+      <Label layoutX="226.0" layoutY="130.0" text="Ort:" />
+      <TextField layoutX="67.0" layoutY="66.0" />
+      <TextField layoutX="67.0" layoutY="96.0" />
+      <TextField layoutX="67.0" layoutY="126.0" />
+      <TextField layoutX="311.0" layoutY="96.0" />
+      <TextField layoutX="311.0" layoutY="66.0" />
+      <TextField layoutX="311.0" layoutY="126.0" />
+   </children>
+</AnchorPane>

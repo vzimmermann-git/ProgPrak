@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="sqlite-jdbc-3.34">
+    <CLASSES>
+      <root url="file://$USER_HOME$/OneDrive/Desktop/sqlite-jdbc-3.34.0/sqlite-jdbc-3.34.0" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/OneDrive/Desktop/sqlite-jdbc-3.34.0/sqlite-jdbc-3.34.0/demo" />
+      <root url="file://$USER_HOME$/OneDrive/Desktop/sqlite-jdbc-3.34.0/sqlite-jdbc-3.34.0/src/main/java" />
+      <root url="file://$USER_HOME$/OneDrive/Desktop/sqlite-jdbc-3.34.0/sqlite-jdbc-3.34.0/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
